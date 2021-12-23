@@ -20,7 +20,7 @@ def find_title(url):
     except AttributeError:
         title_name = "Not Available"
     
-    # print(title_name)
+    print(title_name)
     return title_name
 
 # Finds the price of the item
@@ -36,7 +36,7 @@ def find_price(url):
     except AttributeError:
         price_float = 0
 
-    # print(price_float)
+    print(price_float)
     return price_float
 
 # Store the URL's in a file.
@@ -80,7 +80,7 @@ def print_to_outputfile(objectlist):
             ofile.write(str(obj.price)+'\n') 
             ofile.write(obj.url+'\n')
             ofile.write('\n') 
-    print("Please check the output.txt file for the status.")
+#     print("Please check the output.txt file for the status.")
     return
 
 # Makes the objects of items
